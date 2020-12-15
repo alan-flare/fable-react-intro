@@ -1,0 +1,33 @@
+// React Functional Component
+
+[<ReactComponent>]
+let Welcome (props: {| name: string |}) =
+  Html.h1 $"Hello, {props.name}"
+
+let element = Welcome {| name = "Alan" |}
+
+ReactDom.render(
+  element,
+  document.getElementById("root"))
+
+
+
+// React Hooks - useState
+
+[<ReactComponent>]
+let CoinGenerator() =
+  let (count, setCount) = React.useState(0)
+
+  Html.div [
+    Html.p [ prop.text $"You have {count} coins 💰" ]
+    Html.button [
+      prop.onClick (fun _ -> setCount(count + 1))
+      prop.text "Generate 🚀"
+    ]
+  ]
+
+let element = CoinGenerator()
+
+ReactDom.render(
+  element,
+  document.getElementById("root"))

@@ -6,7 +6,7 @@ A simple Fable-React application.
 
 ## Requirements
 
-- .NET Core 5+
+- .NET 5+
 - Node.js 10.0+
 
 ## Installation
@@ -25,6 +25,20 @@ To start the development server, run the following commands:
 ```bash
 npm start
 ```
+
+## Debugging
+
+Ensure your development server is running.
+
+Using VS Code, there is a launch task `Start Chrome Debugger` that you can run to start the debugger.
+
+You can set breakpoints in the generated `.fs.js` files within VS Code.
+
+Alternatively, you may use your browser. The exact instructions will depend on your browser, but essentially it simply involves:
+
+1. Opening the Developer tools panel (usually by hitting F12).
+1. Finding the F# file you want to add breakpoints to in the source of the website (look inside the webpack folder).
+1. Add breakpoints to it in your browser inspector.
 
 ## Build
 

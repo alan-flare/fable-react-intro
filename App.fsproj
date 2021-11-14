@@ -1,13 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
-        <LangVersion>preview</LangVersion>
     </PropertyGroup>
     <ItemGroup>
         <Compile Include="src\App.fs" />
     </ItemGroup>
     <ItemGroup>
-        <PackageReference Include="Fable.Browser.Dom" Version="2.2.0" />
-        <PackageReference Include="Feliz" Version="1.27.0" />
+        <PackageReference Include="Fable.Browser.Dom" Version="2.6.0" />
+        <PackageReference Include="Feliz" Version="1.56.0" />
     </ItemGroup>
 </Project>

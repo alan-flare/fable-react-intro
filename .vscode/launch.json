@@ -1,0 +1,10 @@
+{
+  "configurations": [
+    {
+      "type": "pwa-chrome",
+      "name": "Start Chrome Debugger",
+      "request": "launch",
+      "url": "http://localhost:8080/"
+    }
+  ]
+}

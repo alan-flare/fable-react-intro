@@ -263,3 +263,4 @@ __pycache__/
 .ionide/symbolCache.db
 dist/
 *.fs.js
+*.fs.js.map

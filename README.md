@@ -31,10 +31,10 @@ npm start
 Ensure your development server is running.
 
 Using VS Code, there is a launch task `Start Chrome Debugger` that you can run to start the debugger.
+With the magic of source maps, you can set breakpoints in your `.fs` files within VS Code.
 
-You can set breakpoints in the generated `.fs.js` files within VS Code.
-
-Alternatively, you may use your browser. The exact instructions will depend on your browser, but essentially it simply involves:
+Alternatively, you may use your browser and set breakpoints in the generated `.fs.js` files.
+The exact instructions will depend on your browser, but essentially it simply involves:
 
 1. Opening the Developer tools panel (usually by hitting F12).
 1. Finding the F# file you want to add breakpoints to in the source of the website (look inside the webpack folder).

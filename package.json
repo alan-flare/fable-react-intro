@@ -1,8 +1,8 @@
 {
   "private": true,
   "scripts": {
-    "start": "dotnet fable watch ./ --run webpack serve --mode development",
-    "build": "dotnet fable ./ && webpack --mode production --node-env production"
+    "start": "dotnet fable watch -s --sourceMapsRoot ./ ./ --run webpack serve --mode development",
+    "build": "dotnet fable ./ --run webpack --mode production --node-env production"
   },
   "dependencies": {
     "react": "^17.0.2",
@@ -10,6 +10,7 @@
   },
   "devDependencies": {
     "html-webpack-plugin": "^5.5.0",
+    "source-map-loader": "^3.0.0",
     "webpack": "^5.64.0",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.5.0"

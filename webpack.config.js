@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  devtool: 'source-map',
+  devtool: 'eval-source-map',
   mode: 'none',
   entry: './src/app.fs.js',
   devServer: {
@@ -11,7 +11,13 @@ module.exports = {
     },
   },
   module: {
-    rules: [],
+    rules: [
+      {
+        test: /\.js$/,
+        enforce: 'pre',
+        use: ['source-map-loader'],
+      },
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({

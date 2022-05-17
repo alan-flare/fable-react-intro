@@ -4,6 +4,7 @@
     </PropertyGroup>
     <ItemGroup>
         <Compile Include="src\App.fs" />
+        <Compile Include="src\Button.fs" />
     </ItemGroup>
     <ItemGroup>
         <PackageReference Include="Fable.Browser.Dom" Version="2.6.0" />

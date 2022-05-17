@@ -15,6 +15,7 @@ To install the project's dependencies, run the following commands:
 
 ```bash
 dotnet restore
+dotnet tool restore
 npm install
 ```
 
